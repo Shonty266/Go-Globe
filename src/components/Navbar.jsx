@@ -38,7 +38,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className='w-20 h-20 bg-transparent hover:text-black' />
         <h2 className='text-4xl p-4'>
           
-           <span className='font-bold text-[#FCAF58]'>Go Globe</span>
+           <Link to='/' className='font-bold text-[#FCAF58]'>Go Globe</Link>
         </h2>
         </div>
         <div className='flex flex-col p-4 text-black  font-bold text-center'>

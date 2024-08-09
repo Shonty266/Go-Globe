@@ -14,12 +14,12 @@ function Features() {
 
 <div className='flex flex-col h-[180px] lg:justify-start justify-end w-full'>
 
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center justify-center gap-2'>
       <hr className='lg:w-8 h-2 w-6  bg-[#FCAF58]' />
       <h1 className='text-black font-semibold lg:text-2xl text-xl '>
       Our Features 
       </h1></div>
-      <h2 className='font-bold lg:items-end items-start leading-snug lg:leading-snug lg:text-5xl text-4xl'>Enhancing Your Travel with Exceptional Services</h2></div>
+      <h2 className='font-bold lg:items-end items-start leading-snug lg:leading-snug lg:text-5xl text-4xl text-center'>Enhancing Your Travel with Exceptional Services</h2></div>
 
 </div>
 <div className='bg-white h-[180px] lg:px-10 px-4  flex gap-10 justify-center items-center rounded-lg'>

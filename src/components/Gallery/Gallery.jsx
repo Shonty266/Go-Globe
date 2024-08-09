@@ -15,12 +15,12 @@ const Gallery = () => {
     <div className='flex flex-col justify-center items-center py-10'>
       <div className='w-full flex flex-col lg:flex-row lg:items-end lg:pl-24'>
 
-      <div className='flex items-center justify-start gap-2 lg:mb-0'>
+      <div className='flex items-center lg:justify-start justify-center gap-2 lg:mb-0'>
         <hr className='lg:w-8 h-2 w-6 bg-[#FCAF58]' />
       <h1 className='text-black font-bold lg:text-5xl text-5xl '>
       Our Gallery 
       </h1></div>
-      <span className='font-semibold text-lg text-gray-500 lg:pl-2'>Share your Happy Memories.</span></div>
+      <span className='font-semibold text-center text-lg text-gray-500 lg:pl-2'>Share your Happy Memories.</span></div>
         <div className='w-[90%] mt-2 lg:w-[80%] flex justify-center items-center relative'>
     
         <Swiper
