@@ -38,20 +38,22 @@ const [places, setplaces] = useState(data);
     });
   
     // Staggered animation for `.box` elements
-    gsap.from('.places .box', {
+    gsap.from('.places #boxes', {
       y: 100,
       opacity: 0,
       duration: 0.5,
-      stagger: 0.2,
+      stagger: 0.5,
       scrollTrigger: {
-        trigger: '.places',
+        trigger: '.main',
         scroller: 'body',
-        // markers: true,
         start: 'top 70%',
         end: 'top 40%',
         scrub: true,
+        markers: true, // Enable markers for debugging
       },
     });
+
+    
   }, []);
   
   
@@ -59,7 +61,7 @@ const [places, setplaces] = useState(data);
 
   return (
     <div className='places'>
-      <div className='px-4 py-12 w-full'>
+      <div className='main px-4 py-12 w-full'>
         <div className='flex items-center gap-2 lg:mb-0 mb-6 lg:pl-24'>
         <hr className='lg:w-8 h-2 w-6  bg-[#FCAF58] text' />
       <h1 className='text-black font-bold lg:text-5xl text-5xl text'>
@@ -111,11 +113,11 @@ const [places, setplaces] = useState(data);
   
 
 
-      <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4 box'>
+      <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4' >
   {places.slice(0, 4).map((item, index) => (
     <div
       key={index}
-      className='border shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer box'
+      className='box border shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer' id='boxes'
     >
       <img
         src={item.image}
