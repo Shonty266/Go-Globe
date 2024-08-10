@@ -7,10 +7,15 @@ import {  } from "react-icons/io";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Gallery = () => {
 
-  
+
+
+
+
   return (
     <div className='flex flex-col justify-center items-center py-10'>
       <div className='w-full flex flex-col lg:flex-row lg:items-end lg:pl-24'>

@@ -1,6 +1,11 @@
 import React, { useState} from 'react'
 import {data} from '../../Data/data.js'
 import { Link } from 'react-router-dom';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Places = () => {
@@ -18,19 +23,53 @@ const [places, setplaces] = useState(data);
   };
 
 
+  useGSAP(() => {
+    // Fade in the `.places` container
+    gsap.from('.places', {
+      opacity: 0,
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: '.places',
+        scroller: 'body',
+        start: 'top 70%',
+        end: 'top 40%',
+        scrub: true,
+      },
+    });
+  
+    // Staggered animation for `.box` elements
+    gsap.from('.places .box', {
+      y: 100,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.places',
+        scroller: 'body',
+        // markers: true,
+        start: 'top 70%',
+        end: 'top 40%',
+        scrub: true,
+      },
+    });
+  }, []);
+  
+  
+
+
   return (
-    <div>
+    <div className='places'>
       <div className='px-4 py-12 w-full'>
         <div className='flex items-center gap-2 lg:mb-0 mb-6 lg:pl-24'>
-        <hr className='lg:w-8 h-2 w-6  bg-[#FCAF58]' />
-      <h1 className='text-black font-bold lg:text-5xl text-5xl '>
+        <hr className='lg:w-8 h-2 w-6  bg-[#FCAF58] text' />
+      <h1 className='text-black font-bold lg:text-5xl text-5xl text'>
        Popular Places
       </h1></div>
 
   
       
        
-          <div className='flex items-center justify-end py-2 gap-4 flex-wrap '>
+          <div className='flex items-center justify-end py-2 gap-4 flex-wrap text '>
             
             <button
               onClick={() => filterType('mountains')}
@@ -72,11 +111,11 @@ const [places, setplaces] = useState(data);
   
 
 
-      <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4 '>
+      <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 pt-4 box'>
   {places.slice(0, 4).map((item, index) => (
     <div
       key={index}
-      className='border shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer'
+      className='border shadow-lg rounded-lg hover:scale-105 duration-300 cursor-pointer box'
     >
       <img
         src={item.image}

@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+  
+
   return (
     <div className='w-full h-auto flex lg:justify-between justify-between sticky top-0 bg-white lg:bg-transparent lg:static z-50  lg:px-20 px-8 items-center'>
+      <div className='navbar w-full h-auto flex lg:justify-between justify-between lg:bg-transparent lg:static z-50  lg:px-20 px-8 items-center'>
       <div className='flex items-center gap-2'>
         <img src={logo} alt="Logo" className='w-24 h-24 bg-transparent hover:text-black' />
         <a href="/" className='text-3xl font-bold text-[#FCAF58]'>Go Globe</a>
@@ -25,6 +28,7 @@ const Navbar = () => {
         <div onClick={() => setNav(!nav)} className='lg:hidden flex cursor-pointer justify-start'>
           <AiOutlineMenu size={30} />
         </div>
+      </div>
       </div>
 
      

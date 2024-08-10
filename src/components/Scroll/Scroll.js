@@ -8,6 +8,11 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+  
+
   return null;
 };
 

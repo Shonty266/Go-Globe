@@ -5,9 +5,12 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
 
+
 const Hero = () => {
+
+
   return (
-    <div className='relative'>
+    <div className='hero relative'>
 
         <div className='w-full flex items-center justify-center text-cenetr lg:gap-28 gap-10 mt-10 flex-wrap px-4'>
             <div className='flex flex-col lg:w-1/2 w-full lg:text-left lg:items-start items-center text-center  flex-wrap '><h1 className='heading font-dancing lg:text-9xl text-7xl font-extrabold leading-snug'>Let's <span className='text-[#FCAF58]'>Travel</span> <br /> the <span className='text-[#FCAF58]'> World </span></h1>
