@@ -9,8 +9,8 @@ const Navbar = () => {
   
 
   return (
-    <div className='w-full h-auto flex lg:justify-between justify-between sticky top-0 bg-white lg:bg-transparent lg:static z-50  lg:px-20 px-8 items-center'>
-      <div className='navbar w-full h-auto flex lg:justify-between justify-between lg:bg-transparent lg:static z-50  lg:px-20 px-8 items-center'>
+    <div className='w-full h-auto flex lg:justify-between justify-between sticky top-0 bg-white lg:bg-transparent lg:static z-10  lg:px-20 px-8 items-center'>
+      <div className='navbar w-full h-auto flex lg:justify-between justify-between bg-white lg:bg-transparent lg:static z-10 lg:px-20 px-2 items-center'>
       <div className='flex items-center gap-2'>
         <img src={logo} alt="Logo" className='w-24 h-24 bg-transparent hover:text-black' />
         <a href="/" className='text-3xl font-bold text-[#FCAF58]'>Go Globe</a>
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
 
      
-      <div className={nav ? 'fixed top-0 right-0 w-full h-3/2 shadow-md shadow-black bg-white z-10 duration-500 ease-in-out' : 'fixed right-[-100%] top-[0] w-full h-[3/4] bg-white z-10 duration-300'}>
+      <div className={nav ? 'fixed top-0 right-0 w-full h-1/4 bg-white z-50 duration-500 ease-in-out' : 'fixed right-[-100%] top-[0] w-full h-/4 bg-white z-10 duration-300'}>
         <AiOutlineClose
           onClick={() => setNav(!nav)}
           size={30}
@@ -45,7 +45,7 @@ const Navbar = () => {
            <Link to='/' className='font-bold text-[#FCAF58]'>Go Globe</Link>
         </h2>
         </div>
-        <div className='flex flex-col p-4 text-black  font-bold text-center'>
+        <div className='flex flex-col p-4 text-black bg-white shadow-md shadow-black  font-bold text-center'>
           
             <Link to='/' className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:bottom-4 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden py-4'>Home</Link>
             <hr className='w-full h-[2px] bg-slate-200' />

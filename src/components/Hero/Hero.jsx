@@ -60,7 +60,7 @@ const Hero = () => {
 
             </div>
             <div>
-            <div className='flex gap-2 justify-center pr-2 pl-2 py-4'>
+            <div className='max-w-full flex gap-2 justify-center pr-2 pl-2 py-4'>
 
                 <div className='flex flex-col gap-2'>
                

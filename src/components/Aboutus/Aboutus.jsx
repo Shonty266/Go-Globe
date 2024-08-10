@@ -34,7 +34,7 @@ useGSAP(() => {
   });
 
   gsap.from('.abt-text', {
-    x:100,
+    x:20,
     opacity: 0,
     duration: 0.5,
     stagger:0.3,
@@ -54,7 +54,7 @@ useGSAP(() => {
     
     <div className="about bg-[#FDF3E8] lg:py-20 py-10">
 
-      <div className="about-heading mx-auto px-4">
+      <div className="about-heading px-4">
       <div className=' flex items-center justify-center gap-2 mb-0flex-wrap'>
         <hr className='w-6 h-2 bg-[#FCAF58]' />
       <h1 className='text-black font-semibold text-2xl'>
