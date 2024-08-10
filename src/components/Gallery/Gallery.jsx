@@ -39,17 +39,17 @@ const Gallery = () => {
     
     <SwiperSlide className='lg:flex lg:h-[550px] h-[500px] w-[90%] lg:py-10 py-4 justify-between gap-10 ' >
           <div className='h-full lg:flex hidden lg:max-w-[300px]  flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/4025639/pexels-photo-4025639.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
           <div className='lg:w-1/2 w-full h-full flex flex-col justify-between'>
-          <img src="https://images.pexels.com/photos/2832028/pexels-photo-2832028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
-          <img src="https://images.pexels.com/photos/6121164/pexels-photo-6121164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/6324302/pexels-photo-6324302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/7292940/pexels-photo-7292940.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
 
           </div>
           <div className='h-full max-w-[300px] lg:flex hidden flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/3932853/pexels-photo-3932853.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
@@ -59,17 +59,17 @@ const Gallery = () => {
 
     <SwiperSlide className='lg:flex lg:h-[550px] h-[500px] w-[90%] lg:py-10 py-4 justify-between gap-10 ' >
           <div className='h-full lg:flex hidden lg:max-w-[300px]  flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/6324239/pexels-photo-6324239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
           <div className='lg:w-1/2 w-full h-full flex flex-col justify-between'>
-          <img src="https://images.pexels.com/photos/2832028/pexels-photo-2832028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
-          <img src="https://images.pexels.com/photos/6121164/pexels-photo-6121164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/2451040/pexels-photo-2451040.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/1310485/pexels-photo-1310485.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
 
           </div>
           <div className='h-full max-w-[300px] lg:flex hidden flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/3193811/pexels-photo-3193811.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
@@ -78,17 +78,17 @@ const Gallery = () => {
     
     <SwiperSlide className='hidden lg:flex lg:h-[550px] h-[500px] w-[90%] lg:py-10 py-4  justify-between gap-10 ' >
           <div className='h-full lg:flex hidden lg:max-w-[300px] max-w-[50px]  flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/4993258/pexels-photo-4993258.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
           <div className='lg:w-1/2 w-full h-full flex flex-col justify-between'>
-          <img src="https://images.pexels.com/photos/2832028/pexels-photo-2832028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
-          <img src="https://images.pexels.com/photos/6121164/pexels-photo-6121164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/2073622/pexels-photo-2073622.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/4916300/pexels-photo-4916300.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
 
           </div>
           <div className='h-full lg:flex hidden max-w-[300px] flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/4993157/pexels-photo-4993157.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
@@ -97,17 +97,17 @@ const Gallery = () => {
     
     <SwiperSlide className='hidden lg:flex lg:h-[550px] h-[500px] w-[90%] lg:py-10 py-4  justify-between gap-10 ' >
           <div className='h-full lg:flex hidden lg:max-w-[300px] max-w-[50px]  flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/16549119/pexels-photo-16549119/free-photo-of-smiling-girls-taking-pictures-on-rock-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
           <div className='lg:w-1/2 w-full h-full flex flex-col justify-between'>
-          <img src="https://images.pexels.com/photos/2832028/pexels-photo-2832028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
-          <img src="https://images.pexels.com/photos/6121164/pexels-photo-6121164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/2691783/pexels-photo-2691783.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
+          <img src="https://images.pexels.com/photos/2887277/pexels-photo-2887277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='w-full h-[220px] object-cover' />
 
           </div>
           <div className='h-full lg:flex  max-w-[300px]  flex-col gap-4 items-center'>
-            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
+            <img src="https://images.pexels.com/photos/5390339/pexels-photo-5390339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='h-full w-full object-cover' />
             
 
           </div>
