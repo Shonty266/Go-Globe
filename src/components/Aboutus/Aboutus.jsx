@@ -20,7 +20,7 @@ useGSAP(() => {
     },
   });
   gsap.from('.image', {
-    x:-100,
+    y:-100,
     opacity: 0,
     duration: 0.5,
     stagger:0.3,
@@ -34,6 +34,7 @@ useGSAP(() => {
   });
 
   gsap.from('.abt-text', {
+    y:-100,
     opacity: 0,
     duration: 0.5,
     stagger:0.3,
