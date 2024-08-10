@@ -12,12 +12,29 @@ import gsap from 'gsap';
 
 const Gallery = () => {
 
+  useGSAP(() => {
+    gsap.from('.gallery', {
+      y:100,
+      opacity: 0,
+      duration: 0.5,
+      stagger:0.3,
+      scrollTrigger: {
+        trigger: '.gallery',
+        scroller: 'body',
+        start: 'top 50%',
+        end: 'top 20%',
+        scrub: true,
+      },
+    });
+    
+  
+  })
 
 
 
 
   return (
-    <div className='flex flex-col justify-center items-center py-10'>
+    <div className='gallery flex flex-col justify-center items-center py-10'>
       <div className='w-full flex flex-col lg:flex-row lg:items-end lg:pl-24'>
 
       <div className='flex items-center lg:justify-start justify-center gap-2 lg:mb-0'>

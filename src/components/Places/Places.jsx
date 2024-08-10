@@ -24,7 +24,6 @@ const [places, setplaces] = useState(data);
 
 
   useGSAP(() => {
-    // Fade in the `.places` container
     gsap.from('.places', {
       opacity: 0,
       duration: 0.5,
@@ -37,7 +36,6 @@ const [places, setplaces] = useState(data);
       },
     });
   
-    // Staggered animation for `.box` elements
     gsap.from('.places #boxes', {
       y: 100,
       opacity: 0,
@@ -48,7 +46,7 @@ const [places, setplaces] = useState(data);
         start: 'top 70%',
         end: 'top 40%',
         scrub: true,
-        markers: true, // Keep markers for debugging
+        // markers: true,
       },
     });
 

@@ -3,12 +3,37 @@ import logo from '../../assets/Go Globe Logo.svg'
 import { FaInstagramSquare, FaFacebook, FaYoutube  } from "react-icons/fa";
 import { FaSquareXTwitter  } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 // import Aboutus from '../Aboutus/Aboutus';
 
 const Footer = () => {
+
+
+  useGSAP(() => {
+    gsap.from('.footer', {
+      // y:100,
+      opacity: 0,
+      duration: 1,
+      // stagger:0.1,
+      scrollTrigger: {
+        trigger: '.footer',
+        scroller: 'body',
+        start: 'top 100%',
+        end: 'top 70%',
+        scrub: true,
+        // markers:true
+      }
+    })
+  })
+  
+
+
+
+
   return (
     <div>
-        <div className='w-full bg-[#FDF3E8] flex justify-evenly py-16 flex-wrap gap-10'>
+        <div className='footer w-full bg-[#FDF3E8] flex justify-evenly py-16 flex-wrap gap-10'>
             <div className='flex flex-col px-10'>
         <div className='flex items-center gap-2'>
         <img src={logo} alt="Logo" className='w-24 h-24 bg-transparent hover:text-black' />
