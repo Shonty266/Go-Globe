@@ -34,7 +34,6 @@ useGSAP(() => {
   });
 
   gsap.from('.abt-text', {
-    x:20,
     opacity: 0,
     duration: 0.5,
     stagger:0.3,
