@@ -39,7 +39,7 @@ const [places, setplaces] = useState(data);
     gsap.from('.places #boxes', {
       y: 100,
       opacity: 0,
-      duration: 0.5,
+      duration: 1,
       stagger: 0.5,
       scrollTrigger: {
         trigger: '.places',

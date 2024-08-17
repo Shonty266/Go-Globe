@@ -14,35 +14,35 @@ useGSAP(() => {
     scrollTrigger: {
       trigger: '.about',
       scroller: 'body',
-      start: 'top 50%',
+      start: 'top 80%',
       end: 'top 20%',
       scrub: true,
     },
   });
   gsap.from('.image', {
-    y:-100,
+    x:-100,
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
     stagger:0.3,
     scrollTrigger: {
-      trigger: '.about',
+      trigger: '.image',
       scroller: 'body',
-      start: 'top 40%',
-      end: 'top 20%',
+      start: 'top 70%',
+      end: 'top 50%',
       scrub: true,
     },
   });
 
   gsap.from('.abt-text', {
-    y:-100,
+    x: 100,
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
     stagger:0.3,
     scrollTrigger: {
-      trigger: '.about',
+      trigger: '.abt-text',
       scroller: 'body',
-      start: 'top 40%',
-      end: 'top 20%',
+      start: 'top 70%',
+      end: 'top 50%',
       scrub: true,
     },
   });
@@ -52,7 +52,7 @@ useGSAP(() => {
 
   return (
     
-    <div className="about bg-[#FDF3E8] lg:py-20 py-10">
+    <div className="about bg-[#FDF3E8] lg:py-20 py-10 overflow-hidden">
 
       <div className="about-heading px-4">
       <div className=' flex items-center justify-center gap-2 mb-0flex-wrap'>
