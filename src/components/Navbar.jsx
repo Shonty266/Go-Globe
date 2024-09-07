@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../assets/Go Globe Logo.svg'; 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,14 +19,21 @@ const Navbar = () => {
       </div>
 
       <div className='hidden lg:flex gap-10 font-bold text-center'>
-        <Link to="/" className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden'>Home</Link>
-        <Link to="/aboutus" className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden'>About Us</Link>
-        <Link to="/features" className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden'>Features</Link>
-        <Link to="/contact" className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden'>Contact Us</Link>
+        <ScrollLink to="hero"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer'>Home</ScrollLink>
+       <ScrollLink to="packages"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer'>Packages</ScrollLink>
+        <ScrollLink to="aboutus" 
+            smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer'>About Us</ScrollLink>
+        <ScrollLink to="features"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer'>Features</ScrollLink>
+        <ScrollLink to="contact"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-lg relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer'>Contact Us</ScrollLink>
       </div>
 
       <div>
-        <Link to="/" className='px-8 py-2 text-center bg-[#F9C784] font-semibold text-xl rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 hidden lg:flex'>Sign Up</Link>
+        <RouterLink to="/signup" className='px-8 py-2 text-center bg-[#F9C784] font-semibold text-xl rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 hidden lg:flex cursor-pointer'>Sign Up</RouterLink>
         <div onClick={() => setNav(!nav)} className='lg:hidden flex cursor-pointer justify-start'>
           <AiOutlineMenu size={30} />
         </div>
@@ -38,22 +47,30 @@ const Navbar = () => {
           size={30}
           className='absolute right-8 top-8 cursor-pointer'
         />
-        <div className='flex items-center'>
+        {/* <div className='flex items-center'>
         <img src={logo} alt="Logo" className='w-20 h-20 bg-transparent hover:text-black' />
-        <h2 className='text-4xl p-4'>
+        <h2 className='text-4xl py-4'>
           
-           <Link to='/' className='font-bold text-[#FCAF58]'>Go Globe</Link>
+           <ScrollLink to='hero' className='font-bold  text-[#FCAF58]'>Go Globe</ScrollLink>
         </h2>
-        </div>
-        <div className='flex flex-col p-4 text-black bg-white shadow-md shadow-black  font-bold text-center'>
+        </div> */}
+        <div className='flex flex-col p-6 text-black bg-white shadow-md shadow-gray-500  font-bold text-center pt-20'>
           
-            <Link to='/' className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:bottom-4 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden py-4'>Home</Link>
+        <ScrollLink to="hero"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>Home</ScrollLink>
             <hr className='w-full h-[2px] bg-slate-200' />
-            <Link to='/aboutus' className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:bottom-4 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden py-4 '> About Us</Link>
+            <ScrollLink to="packages"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>Packages</ScrollLink>
             <hr className='w-full h-[2px] bg-slate-200' />
-            <Link to='/features' className='hover:text-[#FCAF58]  duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:bottom-4 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden py-4 '> Features</Link>
+            <ScrollLink to="aboutus" 
+            smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>About Us</ScrollLink>
             <hr className='w-full h-[2px] bg-slate-200' />
-            <Link to='/contact' className='hover:text-[#FCAF58]  duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:bottom-4 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden pt-4 '> Contact Us</Link>
+            <ScrollLink to="features"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>Features</ScrollLink>
+            <hr className='w-full h-[2px] bg-slate-200' />
+            <ScrollLink to="contact"  smooth={true} 
+            duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>Contact Us</ScrollLink>
             
          
         </div>

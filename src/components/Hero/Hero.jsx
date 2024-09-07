@@ -10,12 +10,12 @@ const Hero = () => {
 
 
   return (
-    <div className='hero relative'>
+    <div className='hero relative' id='hero'>
 
         <div className='w-full flex items-center justify-center text-cenetr lg:gap-28 gap-10 mt-10 flex-wrap px-4'>
             <div className='flex flex-col lg:w-1/2 w-full lg:text-left lg:items-start items-center text-center  flex-wrap '><h1 className='heading font-dancing lg:text-9xl text-7xl font-extrabold leading-snug'>Let's <span className='text-[#FCAF58]'>Travel</span> <br /> the <span className='text-[#FCAF58]'> World </span></h1>
             <p className=' text-gray-800 text-lg font-semibold'>Explore the world’s most beautiful destinations with us.</p>
-            <Link to="/allplaces" className="bg-[#F9C784] w-48 flex items-center gap-2 justify-center text-center text-xl font-semibold py-2 px-8 rounded-lg mt-10 hover:bg-[#FCAF58] hover:text-white duration-300">
+            <Link to="/signup" className="bg-[#F9C784] w-48 flex items-center gap-2 justify-center text-center text-xl font-semibold py-2 px-8 rounded-lg mt-10 hover:bg-[#FCAF58] hover:text-white duration-300">
   Explore <FaArrowRight />
 </Link>
 
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         <div>
           <p className="text-gray-600 font-medium">Location</p>
-          <input className="text-gray-800 border-2 rounded-md outline-none pl-2 w-28" placeholder='Enter Price'/>
+          <input className="text-gray-800 border-2 rounded-md outline-none pl-2 w-28" placeholder='Enter Location'/>
 
         </div>
       </div>
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div>
           <p className="text-gray-600 font-medium">Date</p>
-          <input className="text-gray-800 border-2 rounded-md outline-none pl-2 w-28" placeholder='Enter Price'/>
+          <input className="text-gray-800 border-2 rounded-md outline-none pl-2 w-28" placeholder='Enter Date'/>
 
         </div>
       </div>

@@ -2,12 +2,10 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React from 'react'
 import { FiInstagram } from "react-icons/fi";
-import { IoIosArrowUp } from 'react-icons/io';
+// import { IoIosArrowUp } from 'react-icons/io';
 
 const Hotels = () => {
-    const handleScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      };
+   
 
 
 
@@ -15,12 +13,12 @@ const Hotels = () => {
         gsap.from('.hotels', {
           y:100,
           opacity: 0,
-          duration: 1.5,
-          stagger:0.1,
+          duration: 2,
+          stagger:0.5,
           scrollTrigger: {
             trigger: '.hotels',
             scroller: 'body',
-            start: 'top 40%',
+            start: 'top 60%',
             end: 'top 10%',
             scrub: true,
           },
@@ -121,12 +119,7 @@ const Hotels = () => {
 
 </div>
      
-<div 
-      onClick={handleScrollToTop}
-      className="fixed bottom-4 right-4 bg-[#F9C784] text-white p-2 rounded-full cursor-pointer shadow-lg hover:bg-[#FCAF58] transition-transform transform hover:scale-110"
-    >
-      <IoIosArrowUp className="text-3xl" />
-    </div>
+
 
 
     </div>

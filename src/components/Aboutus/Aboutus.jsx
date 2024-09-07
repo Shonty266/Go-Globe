@@ -52,7 +52,7 @@ useGSAP(() => {
 
   return (
     
-    <div className="about bg-[#FDF3E8] lg:py-20 py-10 overflow-hidden">
+    <div className="about bg-[#FDF3E8] lg:py-20 py-10 overflow-hidden" id="aboutus">
 
       <div className="about-heading px-4">
       <div className=' flex items-center justify-center gap-2 mb-0flex-wrap'>

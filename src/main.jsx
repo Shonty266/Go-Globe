@@ -1,19 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Signup from './Pages/SignUp.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Allplaces from './components/Places/Allplaces.jsx'
-import AboutusFull from './components/Aboutus/AboutusFull.jsx'
-import FeaturesFull from './components/Features/FeaturesFull.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import Login from './Pages/Login.jsx'
+import Dashboard from './Pages/Dashboard.jsx'
+import OtpScreen from './Pages/OTPScreen.jsx'
+import Booking from './Pages/Booking.jsx'
+import Explore from './Pages/Explore.jsx'
+import Profile from './Pages/Profile.jsx'
+import ItemDetails from './Pages/PlaceDetails.jsx'
+import Ticket from './Pages/Ticket.jsx'
+import Settings from './Pages/Settings.jsx'
+import Support from './Pages/Support.jsx'
 
 const router = createBrowserRouter([
   {path:'/' , element:<App/>},
-  {path:'/allplaces' , element:<Allplaces/>},
-  {path:'/aboutus' , element:<AboutusFull/>},
-  {path:'/features' , element:<FeaturesFull />},
-  {path:'/contact' , element:<Contact />},
+  {path:'/signup' , element:<Signup />},
+  {path:'/otpscreen' , element:<OtpScreen />},
+  {path:'/login' , element:<Login />},
+  {path:'/dashboard' , element:<Dashboard />},
+  {path:'/booking' , element:<Booking />},
+  {path:'/explore' , element:<Explore />},
+  {path:'/profile' , element:<Profile />},
+  {path:'/explore/placedetails/:id' , element:<ItemDetails />},
+  {path:'/booking/tickets/:city' , element:<Ticket />},
+  {path:'/settings' , element:<Settings />},
+  {path:'/support' , element:<Support />},
+
 ])
 
 
