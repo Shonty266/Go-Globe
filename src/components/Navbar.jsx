@@ -71,8 +71,10 @@ const Navbar = () => {
             <hr className='w-full h-[2px] bg-slate-200' />
             <ScrollLink to="contact"  smooth={true} 
             duration={500}  className='hover:text-[#FCAF58] duration-300 text-2xl relative z-100 after:absolute after:w-full after:h-full after:top-0 after:left-[-100%] after:-z-10 after:border-b-2 after:border-b-[#FCAF58] hover:after:left-0 after:duration-300 overflow-hidden cursor-pointer py-4'>Contact Us</ScrollLink>
-            
-         
+            <hr className='w-full h-[2px] bg-slate-200' />
+           <div className='py-6'>
+           <RouterLink to="/signup" className='px-20 py-2 text-center bg-[#F9C784] font-semibold text-xl rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 lg:flex cursor-pointer'>Sign Up</RouterLink>
+           </div>
         </div>
       </div>
     </div>
