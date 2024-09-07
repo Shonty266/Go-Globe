@@ -8,7 +8,7 @@ import ScrollToTop from '../components/Scroll/Scroll';
 
 const Support = () => {
 
-    const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+    const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
   const toggleNavbar = () => {
     setIsNavbarVisible(!isNavbarVisible);
