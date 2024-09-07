@@ -29,7 +29,6 @@ const App = () => {
     });
   });
 
-  // State to control the custom alert visibility
   const [showAlert, setShowAlert] = useState(true);
 
   const closeAlert = () => {
@@ -49,7 +48,6 @@ const App = () => {
       <Contact />
       <Footer />
 
-      {/* Custom Alert */}
       {showAlert && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-8 rounded-lg shadow-lg text-center lg:w-[60%] w-[90%]">
