@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { data } from '../Data/data'; 
 import { IoMdClose } from 'react-icons/io';
 import { IoArrowBack } from 'react-icons/io5';
@@ -86,6 +86,7 @@ const ItemDetails = () => {
       <ScrollToTop />
       <button 
         onClick={toggleNavbar} 
+        
         className='lg:hidden fixed top-4 left-4 text-gray-900 text-3xl z-50'
       >
         {isNavbarVisible ? <IoMdClose /> : <RiMenu2Fill />}
@@ -124,9 +125,21 @@ const ItemDetails = () => {
             </div>
 
             <div>
-              <button className="lg:px-8 py-2 px-4 text-center bg-[#F9C784] font-semibold lg:text-xl text-lg rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 lg:flex cursor-pointer mt-4'">
-                Book Now
-              </button>
+            <Link 
+  to='/explore/placedetails/bookingform'
+  state={{ 
+    name: item.name, 
+    country: item.country, 
+    price: item.price, 
+    duration: item.duration, 
+    hotel: item.hotel.name,
+    activities: item.activities,
+    amenities: item.hotel.amenities
+  }} 
+  className="lg:px-8 py-2 px-4 text-center bg-[#F9C784] font-semibold lg:text-xl text-lg rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 lg:flex cursor-pointer mt-4"
+>
+  Book Now
+</Link>
             </div>
           </div>
 

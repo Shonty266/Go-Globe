@@ -14,6 +14,9 @@ import ItemDetails from './Pages/PlaceDetails.jsx'
 import Ticket from './Pages/Ticket.jsx'
 import Settings from './Pages/Settings.jsx'
 import Support from './Pages/Support.jsx'
+import BookingForm from './Pages/BookingForm.jsx'
+import ConfirmationPage from './Pages/ConformationPage.jsx'
+import PaymentConfirmation from './Pages/PaymentConformation.jsx'
 
 const router = createBrowserRouter([
   {path:'/' , element:<App/>},
@@ -28,6 +31,9 @@ const router = createBrowserRouter([
   {path:'/booking/tickets/:city' , element:<Ticket />},
   {path:'/settings' , element:<Settings />},
   {path:'/support' , element:<Support />},
+  {path:'/explore/placedetails/bookingform' , element:<BookingForm />},
+  {path:'/explore/placedetails/bookingform/conformation' , element:<ConfirmationPage />},
+  {path:'/explore/placedetails/bookingform/conformation/paymentconformation' , element:<PaymentConfirmation />},
 
 ])
 
