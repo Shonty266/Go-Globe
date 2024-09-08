@@ -75,7 +75,7 @@ const ConfirmationPage = () => {
         <div>
         <button
           onClick={handlePayment}
-          className="bg-[#FCAF58] text-xl text-white px-6 py-2 rounded mt-4 font-semibold"
+          className="bg-[#FCAF58] text-xl text-white px-6 py-2 rounded-lg mt-4 font-semibold"
         >
           Pay Now
         </button>

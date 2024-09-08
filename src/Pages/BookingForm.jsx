@@ -382,7 +382,7 @@ const BookingForm = () => {
 
         <button
           type="submit"
-          className="bg-[#FCAF58] text-white text-2xl px-6 font-semibold py-2 rounded"
+          className="bg-[#FCAF58] text-white text-2xl px-6 font-semibold py-2 rounded-lg"
         >
           Submit
         </button>
