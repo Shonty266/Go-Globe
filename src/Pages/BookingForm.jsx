@@ -67,12 +67,53 @@ const BookingForm = () => {
     navigate('/explore/placedetails/bookingform/conformation', { state: formData });
   };
 
+  // Function to auto-fill the form with example data
+  const autofillForm = () => {
+    setFormData({
+      ...formData,
+      fullName: 'John Doe',
+      dateOfBirth: '1990-01-01',
+      passportNumber: 'A12345678',
+      passportValidity: '2030-01-01',
+      nationality: 'American',
+      phoneNumber: '+1234567890',
+      emailAddress: 'john.doe@example.com',
+      emergencyContactName: 'Jane Doe',
+      emergencyContactPhone: '+0987654321',
+      emergencyContactRelation: 'Spouse',
+      destination: 'Paris',
+      travelDates: '2024-12-25',
+      duration: '7 days',
+      numberOfTravelers: 2,
+      flightPreferences: 'Non-stop',
+      accommodationPreferences: '4-star hotel',
+      specialRequests: 'Vegetarian meal',
+      visas: 'None',
+      travelInsurance: 'Included',
+      healthRecords: 'Up to date',
+      vaccinationRecords: 'COVID-19 vaccinated',
+      additionalTravelers: [{ fullName: 'Jane Doe', dateOfBirth: '1990-02-01', passportNumber: 'B12345678' }],
+      packageName: 'Paris Getaway',
+      packagePrice: '$2000',
+      activities: ['Eiffel Tower', 'Louvre Museum'],
+      amenities: ['Wi-Fi', 'Breakfast']
+    });
+  };
+
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Booking Form</h1>
+      <div className="flex justify-between items-center mb-4 flex-wrap">
+        <h1 className="text-2xl font-bold">Booking Form</h1>
+        <button
+          type="button"
+          onClick={autofillForm}
+          className="px-6 py-1 text-center bg-[#F9C784] font-semibold text-lg rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 lg:flex cursor-pointer"
+        >
+          Fill Demo Details
+        </button>
+      </div>
       <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Personal Information */}
-        <div className="bg-gray-100 p-4 rounded-lg shadow">
+        <div className=" bg-white p-4 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Personal Information</h2>
           <label className="block mb-2">
             Full Name:
@@ -186,8 +227,7 @@ const BookingForm = () => {
           </label>
         </div>
 
-        {/* Travel Details */}
-        <div className="bg-gray-100 p-4 rounded-lg shadow">
+        <div className="bg-white p-4 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Travel Details</h2>
           <label className="block mb-2">
             Destination:
@@ -266,9 +306,8 @@ const BookingForm = () => {
           </label>
         </div>
 
-        {/* Additional Travelers */}
         {formData.numberOfTravelers > 1 && (
-          <div className="bg-gray-100 p-4 rounded-lg shadow">
+          <div className="bg-white p-4 rounded-lg shadow">
             <h2 className="text-xl font-semibold mb-2">Additional Travelers</h2>
             {formData.additionalTravelers.map((traveler, index) => (
               <div key={index} className="mb-4">
@@ -326,8 +365,7 @@ const BookingForm = () => {
         )}
 
       
-        {/* Additional Documents */}
-        <div className="bg-gray-100 p-4 rounded-lg shadow">
+        <div className="bg-white p-4 rounded-lg shadow">
           <h2 className="text-xl font-semibold mb-2">Additional Documents</h2>
           <label className="block mb-2">
             Visas:
@@ -382,7 +420,7 @@ const BookingForm = () => {
 
         <button
           type="submit"
-          className="bg-[#FCAF58] text-white text-2xl px-6 font-semibold py-2 rounded-lg"
+          className="px-8 py-2 text-center bg-[#F9C784] font-semibold text-xl rounded-lg hover:bg-[#FCAF58] hover:text-white duration-300 lg:flex cursor-pointer"
         >
           Submit
         </button>
