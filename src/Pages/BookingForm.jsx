@@ -94,7 +94,7 @@ const BookingForm = () => {
       vaccinationRecords: 'COVID-19 vaccinated',
       additionalTravelers: [{ fullName: 'Jane Doe', dateOfBirth: '1990-02-01', passportNumber: 'B12345678' }],
       packageName: 'Paris Getaway',
-      packagePrice: '$2000',
+      // packagePrice: '$2000',
       activities: ['Eiffel Tower', 'Louvre Museum'],
       amenities: ['Wi-Fi', 'Breakfast']
     });
